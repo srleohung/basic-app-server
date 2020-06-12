@@ -10,6 +10,6 @@ type ExampleReportingTaskConfig struct {
 }
 
 type TasksConfig struct {
-	ExampleFetchingTask  *ExampleFetchingTaskConfig  `yaml:"data_fetching_task"`
-	ExampleReportingTask *ExampleReportingTaskConfig `yaml:"data_reporting_task"`
+	ExampleFetchingTask  *ExampleFetchingTaskConfig  `yaml:"example_fetching_task"`
+	ExampleReportingTask *ExampleReportingTaskConfig `yaml:"example_reporting_task"`
 }
