@@ -41,7 +41,7 @@ func NewHTTPReporter(scheme, host, username, password string) *HTTPReporter {
 func (reporter *HTTPReporter) Report(reportPath string, buffer *bytes.Buffer) error {
 	reportingUrl := reporter.reportingUrlTemplate
 	reportingUrl.Path = reportPath
-	if req, err := reporter.formReportingUrl(reporter.reportingUrlTemplate, buffer); err != nil {
+	if req, err := reporter.formReportingUrl(reportingUrl, buffer); err != nil {
 		return err
 	} else {
 		res, err := reporter.httpClient.Do(req)
