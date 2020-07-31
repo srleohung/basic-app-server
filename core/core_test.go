@@ -2,11 +2,6 @@ package core
 
 import (
 	"basic-app-server/config"
-	. "basic-app-server/core/manager"
-	. "basic-app-server/core/reporter"
-	. "basic-app-server/core/syncer"
-	. "basic-app-server/core/tasks"
-	. "basic-app-server/datastore"
 	"reflect"
 	"testing"
 )
